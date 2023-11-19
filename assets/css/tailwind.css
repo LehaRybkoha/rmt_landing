@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-black;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input {
+    @apply rounded-none shadow-none;
+  }
+
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+}
+
+@layer utilities {
+  .h-screen-small {
+    height: 100svh;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .clip-path {
+    clip-path: inset(0px);
+  }
+}
+
+.tippy-box {
+  @apply !rounded-none !bg-black !text-white;
+}
+
+.tippy-content {
+  @apply !p-2;
+}
+
+.tippy-arrow {
+  @apply !text-black;
+}
+
+.tippy-box[data-placement^='top'] > .tippy-arrow::before {
+  @apply !border-4 !border-t-black !bottom-0 !left-1/2 translate-y-full -translate-x-1/2;
+}

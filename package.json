@@ -1,0 +1,60 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=18.16.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "story:dev": "histoire dev",
+    "story:build": "histoire build",
+    "story:preview": "histoire preview"
+  },
+  "dependencies": {
+    "@vee-validate/nuxt": "^4.11.3",
+    "@vee-validate/yup": "^4.11.3",
+    "@vue-final-modal/nuxt": "^1.0.0",
+    "@vueform/slider": "^2.1.7",
+    "dayjs": "^1.11.9",
+    "gsap": "^3.12.2",
+    "jwt-decode": "^3.1.2",
+    "maska": "^2.1.10",
+    "nuxt-swiper": "^1.2.2",
+    "vue-collapsed": "^1.2.7",
+    "vue-final-modal": "^4.4.5",
+    "vue-tippy": "^6.3.1",
+    "ymaps": "^0.2.1",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.41.0",
+    "@gtm-support/vue-gtm": "^2.1.0",
+    "@histoire/plugin-nuxt": "^0.17.0",
+    "@histoire/plugin-vue": "^0.17.1",
+    "@nuxtjs/device": "^3.1.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/google-fonts": "^3.0.2",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@pinia/nuxt": "^0.4.11",
+    "@vueuse/nuxt": "^10.4.1",
+    "eslint": "^8.48.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "histoire": "^0.17.0",
+    "lint-staged": "^14.0.1",
+    "nuxt": "^3.7.1",
+    "sass": "^1.68.0",
+    "simple-git-hooks": "^2.9.0",
+    "vite-svg-loader": "^4.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

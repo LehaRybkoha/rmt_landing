@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт временно не работает</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    .error {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .error__content {
+      padding: 0 16px;
+      text-align: center;
+    }
+    .error__title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 16px 0;
+      color: #181818;
+      text-transform: uppercase;
+    }
+    .error__desc {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      color: #181818;
+    }
+    .error__link {
+      color: #181818;
+      transition: color 0.3s;
+    }
+    .error__link:hover {
+      color: #322CFE;
+    }
+  </style>
+</head>
+<body>
+  <div class="error">
+    <div class="error__content">
+      <svg xmlns="http://www.w3.org/2000/svg" width="120" height="44" fill="none" viewBox="0 0 120 44" class="hidden lg:block"><path fill="currentColor" d="M19.62 4.595 7.214 10.182 5 5.586 17.404 0l2.216 4.595ZM16.539 33.618H9.484v-21.84h7.055v21.84Z"></path><path fill="currentColor" fill-rule="evenodd" d="M36.727 11.779H21.803v21.84h14.955c13.168 0 15.864-5.93 15.864-10.626v-.88c0-4.903-2.856-10.334-15.895-10.334Zm-.543 16.583h-7.327V16.945h7.327c8.108 0 9.047 3.377 9.047 5.606v.176c0 2.232-1.064 5.635-9.047 5.635ZM73.11 11.397c14.168 0 15.831 6.9 15.831 10.804v.88C88.941 26.924 87.307 34 73.11 34h-1.301c-14.262 0-15.864-7.075-15.864-10.92v-.89c0-3.904 1.597-10.803 15.864-10.803l1.3.01Zm8.447 11.007c0-2.495-1.485-5.723-9.112-5.723-7.752 0-9.115 3.228-9.115 5.723v.354c0 2.495 1.485 5.934 9.115 5.934 7.568 0 9.112-3.354 9.112-5.87v-.418Z" clip-rule="evenodd"></path><path fill="currentColor" d="M100.347 28.187V11.779h-7.055v21.826H116v-5.418h-15.653Z"></path></svg>
+      <h1 class="error__title">Сайт временно не&nbsp;работает</h1>
+      <p class="error__desc">
+        Попробуйте зайти позже или&nbsp;свяжитесь&nbsp;с&nbsp;нами <br>
+        <a href="mailto:help@idol.ru" class="error__link">help@idol.ru</a> или
+        <a href="tel:+78007007446" class="error__link">8&nbsp;(800)&nbsp;700-74-46</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
