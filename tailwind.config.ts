@@ -18,6 +18,7 @@ export default <Partial<Config>>{
       'black': '#000000',
       'blue': '#322cfe',
       'blue-active': '#2b26d9',
+      'cases': '#2C2C2C',
       'gray': {
         DEFAULT: '#e8e8e8',
         2: '#f9f9f9',

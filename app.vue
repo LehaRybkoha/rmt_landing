@@ -11,6 +11,9 @@
 
 <style>
 body {
-  background-color: blue;
+  /* background-color: blue; */
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
 }
 </style>
